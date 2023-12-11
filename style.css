@@ -17,10 +17,8 @@ body{
 .container{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     width: 80%;
     margin: 10px auto;
-    /* background-color: whitesmoke; */
 }
 
 .naviigation-container{
@@ -60,13 +58,16 @@ body{
     text-decoration: none;
     color: black;
 }
-
+li a:hover{
+    color: blue;
+}
 
 .carousel{
     position: relative;
     height: 600px;
     width: 100%;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .carousel-img{
@@ -126,8 +127,9 @@ body{
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    top: 80%;
     bottom: 0;
-    left: 50%;
+    left: 48%;
 }
 
 .carousel_indicator{
@@ -135,15 +137,108 @@ body{
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background: rgba(0,0,0,.3);
     margin: 0 10px;
     cursor: pointer;
 
 }
 .carousel_indicator.current_slide{
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0, 132, 255, 0.61);
 }
 
 .its_hidden{
     display: none;
 }
+
+.main-hero-container{
+    position: absolute;
+    display: flex;
+    top: 80%;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/* .hero-section{
+    margin-bottom: 10000px;
+} */
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    background-color: blue;
+    color: white;
+}   
+.image-div{
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+    z-index: 2;
+
+}
+/* .hero-images{
+    position: absolute;
+    left: 25%;
+    width: 4rem;
+    top: 20%;
+} */
+h2{
+    margin-bottom: 20px;
+    font-family:'Poppins', sans-serif;
+}
+
+.hero-container.blue{
+    background-color: rgba(0, 145, 255, 0.667);
+}
+.hero-container.green{
+    background-color: rgba(34, 212, 18, 0.777);
+}
+.hero-container.purple{
+    background-color: rgba(174, 0, 255, 0.981);
+}
+.hero-container.red{
+    background-color: rgba(255, 0, 0, 0.747);
+}
+.hero-container p {
+    font-size: larger;
+}
+.empty{
+    margin-top: 1000px;
+}
+
+.fa-solid{
+    position: absolute;
+    color: rgba(0, 145, 255, 0.667);
+    left: 30%;
+    top: 25%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.fa-award{
+    left: 35%;
+}
+
+
+/* 
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensures the container size matches the image size 
+  }
+  
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #db3434; /* Change this to the desired color 
+    opacity: 0.5; /* Adjust the opacity as needed 
+  }
+   */
