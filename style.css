@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins","sans-serif";
+    font-family: "Work Sans", Arial, sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
 }
 
 body{
@@ -78,7 +81,6 @@ li a:hover{
 }
 
 .carousel_container{
-    /* background-color: green; */
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -157,9 +159,6 @@ li a:hover{
     margin-bottom: 100px;
 }
 
-/* .hero-section{
-    margin-bottom: 10000px;
-} */
 
 .hero-container{
     display: flex;
@@ -181,37 +180,28 @@ li a:hover{
     z-index: 2;
 
 }
-/* .hero-images{
-    position: absolute;
-    left: 25%;
-    width: 4rem;
-    top: 20%;
-} */
+
 h2{
-    margin-bottom: 20px;
-    font-family:'Poppins', sans-serif;
+    margin-bottom: 20px; 
 }
 
 .hero-container.blue{
-    background-color: rgba(0, 145, 255, 0.667);
+    background-color: #1eaaf1;
 }
 .hero-container.green{
-    background-color: rgba(34, 212, 18, 0.777);
+    background-color: #8cc152;
 }
 .hero-container.purple{
-    background-color: rgba(174, 0, 255, 0.981);
+    background-color: #5d50c6;
 }
 .hero-container.red{
-    background-color: rgba(255, 0, 0, 0.747);
+    background-color: #f1453d;
 }
 .hero-container p {
     font-size: larger;
 }
-.empty{
-    margin-top: 1000px;
-}
 
-.fa-solid{
+.hero-icon{
     position: absolute;
     color: rgba(0, 145, 255, 0.667);
     left: 30%;
@@ -220,25 +210,143 @@ h2{
     text-align: center;
 }
 
-.fa-award{
+.hero-icon2{
     left: 35%;
 }
+.container1{
+    width: 80%;
+    margin: 300px auto 0 auto;
+    display: flex;  
+    flex-wrap: wrap;
+}
 
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+    padding:48px 15px;
+}
+.container1 p{
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 2;
+}
+.container1 h2{
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+.grid-container2{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding:48px 15px;
+    background-color: #fafafa;
+}
+.sec_con{
+    padding: 0 24px;
+}
 
-/* 
-.image-container {
-    position: relative;
-    display: inline-block; /* Ensures the container size matches the image size 
-  }
-  
-.image-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #db3434; /* Change this to the desired color 
-    opacity: 0.5; /* Adjust the opacity as needed 
-  }
-   */
+.section-button1{
+    background-color: #fda638;
+    border: 2px solid #fda638;
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+}
+.image-div1{
+    display: flex;
+    flex-direction: row;
+}
+.grid-con-image{
+    border-radius: 50%;
+    background-color: #1eaaf1;
+    padding: 15px;
+    margin-right: 15px;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.grid-container3{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.image-background {
+    background-image: url("./pictures/placeholder2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.image-background-container{
+    width: 80%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.content h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: start;
+}
+.content>div{
+    padding: 0 15px;
+}
+.content p{
+    text-align: start;
+}
+.image-button{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    margin-right: 100px;
+    border-radius: 30px;
+    width: 170px;
+    height: 40px;
+    padding: 0 15px;
+}
+.image-button a{
+    text-decoration: none;
+    color: white;
+}
+.teachers-span{
+    color: #5d50c6;
+    font-size: 44px;
+    font-weight: 600;
+}
+.heading h2{
+    color: #fda638;
+    font-size: 44px;
+    font-weight: 600;
+}
