@@ -6,10 +6,18 @@
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    
 }
 
 body{
     min-height: 100vh;
+    font-family: "Work Sans", Arial, sans-serif;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .logo{
@@ -197,9 +205,6 @@ h2{
 .hero-container.red{
     background-color: #f1453d;
 }
-.hero-container p {
-    font-size: larger;
-}
 
 .hero-icon{
     position: absolute;
@@ -225,18 +230,25 @@ h2{
     flex-direction: column;
     flex: 1.5;
     padding:48px 15px;
+    
 }
 .container1 p{
     margin-bottom: 1rem;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.5);
-    line-height: 2;
 }
 .container1 h2{
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.8);
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color:  rgba(0, 0, 0, 0.8);
+
 }
 .grid-container2{
     display: flex;
@@ -248,6 +260,7 @@ h2{
 .sec_con{
     padding: 0 24px;
 }
+
 
 .section-button1{
     background-color: #fda638;
@@ -289,7 +302,7 @@ h2{
 }
 
 .image-background {
-    background-image: url("./pictures/placeholder2.jpg");
+    background-image: url("./pictures/bg_3.jpg.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -340,6 +353,18 @@ h2{
     text-decoration: none;
     color: white;
 }
+
+.teachers-section{
+    padding: 7em 0;
+    background-color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.teachers-section p{
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
+}
 .teachers-span{
     color: #5d50c6;
     font-size: 44px;
@@ -349,4 +374,75 @@ h2{
     color: #fda638;
     font-size: 44px;
     font-weight: 600;
+}
+.heading{
+    margin: 0 -15px 48px 0;
+    padding-bottom: 0.5rem;
+}
+.heading2{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.heading2 p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.staff-container1{
+    padding: 0 15px;
+}
+.staff{
+    margin-bottom: 30px;
+}
+
+.image-staff{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+.img{
+    width: 100%;
+}
+.img > img{
+    height: 300px;
+}
+.image-container-staff h3{
+    font-weight: 500;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    color: (0, 0, 0, 0.8);
+
+}
+.image-container-staff p{
+    color: rgba(0, 0, 0, 0.5)
+}
+
+/* #features{
+    animation: features 1s;
+    animation-timeline: view();
+    animation-range-start: 10px;
+    animation-range-end: 1000px;
+    transition: all ease-in .3;
+}
+@keyframes features{
+    from {
+        opacity: 0;
+        transform:translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    };
+} */
+
+
+/* Add a class to elements that should have the fade-in effect */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in-up.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }

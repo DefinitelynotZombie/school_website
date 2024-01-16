@@ -172,3 +172,36 @@ startAutomaticSlide();
 
 // ... (Your existing code)
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all elements with the class 'fade-in-up'
+    var fadeElements = document.querySelectorAll('.fade-in-up');
+
+    function fadeInElements() {
+        var triggerHeight = window.innerHeight * 0.8; // Adjust the percentage as needed
+
+        fadeElements.forEach(function (element, index) {
+            // Calculate the distance of the element from the top of the viewport
+            var elementTop = element.getBoundingClientRect().top;
+
+            // Check if the element is in the viewport and below the trigger height
+            if (elementTop - triggerHeight < 0) {
+                // Calculate staggered delay based on index
+                var delay = index * 250; // Adjust the delay as needed
+
+                // Apply the delay using CSS style
+                element.style.transitionDelay = delay + 'ms';
+
+                // Add the 'fade-in' class after the delay
+                element.classList.add('fade-in');
+            }
+        });
+    }
+
+    // Attach the fadeInElements function to the scroll event
+    window.addEventListener('scroll', fadeInElements);
+
+    // Trigger the fadeInElements function on page load
+    fadeInElements();
+});
+
+
