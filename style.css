@@ -75,10 +75,9 @@ li a:hover{
 
 .carousel{
     position: relative;
-    height: 600px;
+    height: 700px;
     width: 100%;
     margin: 0 auto;
-    z-index: 1;
 }
 
 .carousel-img{
@@ -160,37 +159,44 @@ li a:hover{
 }
 
 .main-hero-container{
-    position: absolute;
     display: flex;
-    top: 80%;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 
 .hero-container{
     display: flex;
     flex-direction: column;
+    height: 17rem;
     text-align: center;
     align-items: center;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
     background-color: blue;
     color: white;
 }   
 .image-div{
     position: relative;
-    background-color: red;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    bottom: 26%;
+    /* border-radius: 50%; */
     width: 8rem;
     height: 8rem;
-    background-color: white;
-    z-index: 2;
+    /* background-color: white; */
+}
+
+.image-div i{
+    padding: 2rem;
+    width: 8rem;
+    aspect-ratio: 1/1;
+    line-height: 4rem;
+    background-color: #fafafa;
+    border-radius: 50%;
 
 }
 
-h2{
+.hero-container h2{
     margin-bottom: 20px; 
+    font-size: 24px;
+    color: white;
 }
 
 .hero-container.blue{
@@ -210,7 +216,6 @@ h2{
     position: absolute;
     color: rgba(0, 145, 255, 0.667);
     left: 30%;
-    top: 25%;
     font-size: 50px;
     text-align: center;
 }
@@ -218,9 +223,13 @@ h2{
 .hero-icon2{
     left: 35%;
 }
+
+#features{
+    margin-top: 48px;
+}
 .container1{
     width: 80%;
-    margin: 300px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;  
     flex-wrap: wrap;
 }
@@ -229,7 +238,7 @@ h2{
     display: flex;
     flex-direction: column;
     flex: 1.5;
-    padding:48px 15px;
+    padding:0 15px;
     
 }
 .container1 p{
@@ -254,7 +263,7 @@ h3{
     display: flex;
     justify-content: center;
     flex: 1;
-    padding:48px 15px;
+    padding:0 15px;
     background-color: #fafafa;
 }
 .sec_con{
@@ -438,8 +447,8 @@ h3{
 /* Add a class to elements that should have the fade-in effect */
 .fade-in-up {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(35px);
+    transition: opacity 0.5s ease, transform .5s ease;
 }
 
 .fade-in-up.fade-in {

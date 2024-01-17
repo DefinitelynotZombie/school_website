@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var fadeElements = document.querySelectorAll('.fade-in-up');
 
     function fadeInElements() {
-        var triggerHeight = window.innerHeight * 0.8; // Adjust the percentage as needed
+        var triggerHeight = window.innerHeight * 0.95; // Adjust the percentage as needed
 
         fadeElements.forEach(function (element, index) {
             // Calculate the distance of the element from the top of the viewport
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Check if the element is in the viewport and below the trigger height
             if (elementTop - triggerHeight < 0) {
                 // Calculate staggered delay based on index
-                var delay = index * 250; // Adjust the delay as needed
+                var delay = index * 100; // Adjust the delay as needed
 
                 // Apply the delay using CSS style
                 element.style.transitionDelay = delay + 'ms';
