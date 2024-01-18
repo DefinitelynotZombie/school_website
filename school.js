@@ -204,4 +204,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeInElements();
 });
 
+var div = document.querySelector(".image-container-staff")
+div.addEventListener("mouseover", function(){
+    h3.style.color = "blue";
+})
 
